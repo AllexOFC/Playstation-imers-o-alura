@@ -1,0 +1,387 @@
+.main-content {
+    width: calc(100% + 6vw);
+    height: fit-content;
+    margin-top: 1vw;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    position: relative;
+    transform: translateX(-3vw);
+    background: linear-gradient(180deg, var(--color-playstation-medium-blue), var(--color-playstation-dark-blue));
+    overflow: hidden;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: var(--bg-image);
+        background-size: cover;
+        background-position: center;
+        filter: blur(8px) brightness(0.4);
+        z-index: -1;
+        opacity: 0;
+        transform: scale(1.1); /* Evita bordas vazias por causa do blur */
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .main-title-container .main-title {
+        color: var(--color-white);
+        text-shadow: 0 2px 4px var(--color-black-t-70);
+    }
+
+    .carousel-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .search-feedback {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--color-white);
+        background-color: var(--color-black-t-70);
+        padding: 1.5rem 2rem;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        text-align: center;
+        z-index: 6; /* Acima dos cards e botões */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .swipe-indicator {
+        display: none; /* Escondido por padrão em telas grandes */
+    }
+
+    /* Se o main-content TIVER um .card em hover, seu ::before fica visível */
+    &:has(.card:hover)::before {
+        opacity: 1;
+    }
+
+    .card-container {
+        width: 100%;
+        height: 32.1vw;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2vw;
+        position: relative;
+        transition: transform 0.5s ease-in-out;
+
+        .card {
+            width: 70vw;
+            flex-shrink: 0;
+            border-radius: 0.25rem;
+            border: 1px solid var(--color-white);
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            transition: ease-in-out 0.3s;
+            background-position: center 30%;
+            background-size: 110%;
+
+            &:hover {
+                background-size: 100%;
+                transition: ease-in-out 0.3s;
+            }
+
+            .hover-indicator {
+                position: absolute;
+                bottom: 1vw;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+                color: var(--color-white-t-70);
+                text-shadow: 0 0 5px var(--color-black);
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                z-index: 2;
+                pointer-events: none;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            &:hover .hover-indicator {
+                opacity: 0;
+            }
+
+            .age-rating {
+                height: 3rem;
+                width: fit-content;
+                position: absolute;
+                bottom: 3vw;
+                right: 3vw;
+                border: 1px solid black;
+                border-right: none;
+                border-radius: 12px;
+                display: flex;
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row-reverse;
+                align-items: center;
+                backdrop-filter: blur(4px) brightness(0.5);
+                color: #fff;
+                z-index: 2;
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+                pointer-events: none;
+
+                img {
+                    height: 3rem;
+                    width: 3rem;
+                }
+
+                .rating-reasons {
+                    height: 3rem;
+                    width: fit-content;
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                    flex-direction: row;
+                    font-size: 0.7rem;
+                    position: relative;
+
+                    span {
+                        height: fit-content;
+                        margin: 1vw;
+                    }
+                }
+            }
+
+            &:hover .age-rating {
+                transition: ease-in-out 0.3s;
+                transition-delay: 0.2s;
+                opacity: 1;
+            }
+
+            .card-info {
+                width: 30%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                background: var(--color-white);
+                opacity: 0;
+                gap: 2vw;
+                padding: 3vw;
+                padding-top: 2vw;
+                position: relative;
+                transition: ease-in-out 0.3s;
+                z-index: 1;
+
+                .card-logo {
+                    width: 100%;
+                    object-fit: contain;
+                }
+
+                .card-description {
+                    color: black;
+                    font-size: 0.9vw;
+                    text-align: center;
+                    line-height: 1.4;
+                    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.7);
+                }
+
+                .card-description-summary {
+                    display: none;
+                }
+
+                .card-link {
+                    height: 3rem;
+                    width: calc(100% - 6vw);
+                    bottom: 3vw;
+                    background: #3784dc;
+                    border: 1px solid black;
+                    border-radius: 0.25rem;
+                    color: #fff;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    overflow: hidden;
+                    transition: ease-in-out 0.3s;
+
+                    &::after {
+                        content: "Vamos Lá!";
+                        width: 100%;
+                        height: 100%;
+                        right: -102%;
+                        background: var(--color-white);
+                        color: var(--color-black);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        transition: ease-in-out 0.3s;
+                    }
+
+                    &:hover::after {
+                        right: 0;
+                        transition: ease-in-out 0.3s;
+                        transition-delay: 0.2s;
+                    }
+                }
+            }
+
+            &:hover .card-info {
+                opacity: 1;
+                transition: ease-in-out 0.3s;
+                transition-delay: 0.2s;
+            }
+        }
+    }
+
+    .carousel-btn {
+        height: calc(32.1vw - 2px);
+        width: calc(13vw - 1px);
+        top: 0;
+        font-size: 6rem;
+        font-weight: bold;
+        position: absolute;
+        color: var(--color-white);
+        text-shadow: 0px 0px 1px var(--color-playstation-medium-blue);
+        backdrop-filter: blur(2px) grayscale(0.7) brightness(0.7);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(1px);
+        transition: ease-in-out 0.3s;
+        z-index: 5;
+
+        &:hover {
+            backdrop-filter: blur(1px) grayscale(0) brightness(1);
+        }
+    }
+
+    #prev-btn {
+        left: -3vw;
+        border-left: none;
+        background: linear-gradient(90deg, var(--color-black), transparent);
+        border-radius: 0px 4px 4px 0;
+    }
+
+    #next-btn {
+        right: -3.05vw;
+        border-right: none;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.58), transparent);
+        border-radius: 4px 0px 0px 4px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-content .card-container .card {
+        .card-info {
+            .card-description-full {
+                display: none; /* Esconde a descrição completa */
+            }
+            .card-description-summary {
+                display: block; /* Mostra a descrição resumida */
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .main-content .card-container .card {
+        /* Opcional: Adiciona uma cor de fundo sólida para quando a imagem de fundo do card some */
+        background-color: var(--color-footer-bg);
+
+        .card-info {
+            background: transparent; /* Remove o fundo branco do painel de informações */
+
+            .card-description-summary {
+                display: none;
+            }
+
+            .card-logo {
+                display: none; /* Esconde a logo do jogo */
+            }
+        }
+        .age-rating .rating-reasons {
+            display: none; /* Esconde os motivos da faixa etária */
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 6vw 3vw;
+
+        .swipe-indicator {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
+            color: var(--color-white-t-70);
+            animation: pulse 2s infinite ease-in-out;
+            font-size: 0.9rem;
+        }
+
+        .carousel-wrapper {
+
+            button {
+                width: 1px;
+                height: 1px;
+                position: absolute;
+                transform: translateX(-110vw);
+            }
+        }
+
+        .card-container {
+            height: auto; /* Altura automática para acomodar o conteúdo vertical */
+            height: fit-content;
+            gap: 2rem;
+
+            .card {
+                height: 50vw;
+                width: 40vw; /* Card ocupa quase toda a tela */
+                flex-direction: column; /* Muda para layout vertical */
+                background-size: cover; /* Garante que a imagem cubra a área */
+                position: relative;
+
+                &:hover {
+                    background-size: cover;
+                }
+
+                .card-info {
+                    opacity: 1; /* Sempre visível em dispositivos de toque */
+                    width: 100%;
+                    height: 100%;
+
+                    .card-link {
+                        bottom: 3vw;
+                        width: calc(100% - 6vw);
+                    }
+                }
+
+                /* Esconde os indicadores de hover que não fazem sentido no mobile */
+                .hover-indicator,
+                .age-rating {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}

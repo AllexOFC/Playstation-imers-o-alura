@@ -1,0 +1,145 @@
+[
+    {
+        "nome": "Horizon Zero Dawn - Remastered",
+        "descricao": "Em um futuro pós-apocalíptico onde máquinas colossais dominam a terra, a jovem caçadora pária Aloy parte em uma busca para descobrir os mistérios de seu passado e as razões da queda da civilização antiga.",
+        "descricaoResumida": "Aloy, uma caçadora pária, desvenda os mistérios de seu passado e de um mundo dominado por máquinas.",
+        "link": "https://www.playstation.com/pt-br/games/horizon-zero-dawn/",
+        "imagem": "/images/HZD.jpg",
+        "imagemLogo": "/images/HZD-logo.webp",
+        "tags": ["HZD", "Aloy", "Guerrilla", "pós-apocalíptico", "máquinas", "RPG de Ação", "Mundo Aberto", "Mulher", "remasterizado", "14", "2017"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-14.avif",
+            "motivos": ["Violência", "Drogas Lícitas"]
+        }
+    },
+    {
+        "nome": "Horizon Forbidden West",
+        "descricao": "Sequência direta de Zero Dawn, Aloy viaja para o Oeste Proibido, uma fronteira perigosa e desconhecida, para encontrar a fonte de uma praga misteriosa que está matando tudo o que infecta. Ela encontra novas tribos, enfrenta máquinas ainda mais mortais e desvenda segredos que podem salvar ou destruir o que resta do mundo.",
+        "descricaoResumida": "Aloy viaja para o Oeste Proibido para deter uma praga misteriosa e enfrentar novas máquinas mortais.",
+        "link": "https://www.playstation.com/pt-br/games/horizon-forbidden-west/",
+        "imagem": "/images/HFW.jpg",
+        "imagemLogo": "/images/HFW-logo.webp",
+        "tags": ["HFW", "Aloy", "Guerrilla", "pós-apocalíptico", "máquinas", "RPG de Ação", "Mundo Aberto", "Mulher", "14", "2022"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-14.avif",
+            "motivos": ["Violência", "Linguagem Imprópria"]
+        }
+    },
+    {
+        "nome": "God of War",
+        "descricao": "Anos após sua vingança contra os deuses do Olimpo, Kratos vive uma vida reclusa no reino nórdico com seu filho, Atreus. Após a morte de sua esposa, eles embarcam em uma jornada para espalhar suas cinzas do pico mais alto de todos os reinos. Lutando para controlar sua fúria e ser o pai que seu filho precisa, Kratos enfrenta deuses e monstros do panteão nórdico.",
+        "descricaoResumida": "Kratos e seu filho Atreus viajam pelo reino nórdico, enfrentando deuses e monstros em sua jornada.",
+        "link": "https://www.playstation.com/pt-br/games/god-of-war/",
+        "imagem": "/images/GOW.jpg",
+        "imagemLogo": "/images/GOW-logo.webp",
+        "tags": ["GOW", "Kratos", "Atreus", "Mimir", "Freya", "Santa Monica", "mitologia", "nórdica", "Ação", "Aventura", "homem", "18", "2018"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-18.webp",
+            "motivos": ["Violência Extrema"]
+        }
+    },
+    {
+        "nome": "God of War Ragnarök",
+        "descricao": "Com o Fimbulwinter (o inverno que precede o fim do mundo) chegando ao fim, Kratos e um Atreus adolescente se preparam para o inevitável Ragnarök. Atreus busca respostas sobre sua identidade como Loki, enquanto Kratos luta contra seu destino e tenta proteger seu filho dos perigos de enfrentar deuses como Thor e Odin.",
+        "descricaoResumida": "Kratos e Atreus se preparam para o Ragnarök, buscando respostas e enfrentando inimigos como Thor e Odin.",
+        "link": "https://www.playstation.com/pt-br/games/god-of-war-ragnarok/",
+        "imagem": "/images/GOW-R.jpg",
+        "imagemLogo": "/images/GOW-R-logo.webp",
+        "tags": ["GOW", "GOWR", "Kratos", "Ragnarok", "Atreus", "Mimir", "Freya", "Loki", "Thor", "Odin", "mitologia", "nórdica", "Santa Monica", "Ação", "Aventura", "homem", "18", "2022"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-18.webp",
+            "motivos": ["Violência Extrema", "Linguagem Imprópria"]
+        }
+    },
+    {
+        "nome": "The Last of Us Part I",
+        "descricao": "Em um mundo devastado por uma pandemia fúngica, o contrabandista Joel é contratado para escoltar Ellie, uma adolescente imune à infecção, em uma jornada brutal pela sobrevivência. O que começa como um trabalho se transforma em um vínculo emocionante onde um precisa do outro para sobreviver.",
+        "descricaoResumida": "Joel escolta a jovem imune Ellie em uma jornada brutal de sobrevivência pelos EUA pós-pandemia.",
+        "link": "https://www.playstation.com/pt-br/games/the-last-of-us-part-i/",
+        "imagem": "/images/TLOU.jpg",
+        "imagemLogo": "/images/TLOU-logo.PNG",
+        "tags": ["TLOU", "TLOU1", "Joel", "Ellie", "Naughty Dog", "pós-apocalíptico", "sobrevivência", "infectados", "Ação", "Aventura", "homem", "Mulher", "18", "2022"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-18.webp",
+            "motivos": ["Violência Extrema", "Conteúdo Sexual", "Drogas"]
+        }
+    },
+    {
+        "nome": "The Last of Us Part II - Remastered",
+        "descricao": "Cinco anos após os eventos do primeiro jogo, Ellie e Joel vivem em uma comunidade próspera em Jackson, Wyoming. No entanto, um evento violento destrói essa paz, e Ellie embarca em uma busca implacável por vingança. A história explora as consequências devastadoras da violência e o ciclo de ódio sob a perspectiva de diferentes personagens.",
+        "descricaoResumida": "Anos depois, Ellie busca vingança após um evento violento destruir a paz de sua comunidade.",
+        "link": "https://www.playstation.com/pt-br/games/the-last-of-us-part-ii/",
+        "imagem": "/images/TLOU2.jpg",
+        "imagemLogo": "/images/TLOU2-logo.webp",
+        "tags": ["TLOU2", "TLOU", "Ellie", "Abby", "Naughty Dog", "pós-apocalíptico", "sobrevivência", "vingança", "Ação", "Aventura", "Mulher", "remasterizado", "18", "2020"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-18.webp",
+            "motivos": ["Violência Extrema", "Nudez", "Drogas"]
+        }
+    },
+    {
+        "nome": "Ghost of Tsushima - Director's cut",
+        "descricao": "No final do século XIII, o império mongol devasta o Japão. Como o samurai Jin Sakai, um dos últimos sobreviventes de seu clã, você deve sacrificar tudo para proteger a ilha de Tsushima e recuperar seu lar, forjando um novo caminho como o Fantasma.",
+        "descricaoResumida": "O samurai Jin Sakai se torna o 'Fantasma' para libertar a ilha de Tsushima dos invasores mongóis.",
+        "link": "https://www.playstation.com/pt-br/games/ghost-of-tsushima/",
+        "imagem": "/images/GoT.avif",
+        "imagemLogo": "/images/GoT-logo.webp",
+        "tags": ["GoT", "Ghost of Tsushima", "Jin Sakai", "Sucker Punch", "samurai", "Japão feudal", "Ação", "Aventura", "Mundo Aberto", "homem", "18", "Director's cut", "Versão do Diretor", "2020"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-18.webp",
+            "motivos": ["Violência Extrema"]
+        }
+    },
+    {
+        "nome": "Ghost of Yutei",
+        "descricao": "Anos após os eventos de Tsushima, uma nova ameaça surge das sombras na província de Yutei. Um antigo mal, ligado aos mitos e lendas da região, desperta. Um novo guerreiro deve seguir os passos do Fantasma para confrontar um inimigo que desafia as tradições dos samurais.",
+        "descricaoResumida": "Um novo guerreiro segue os passos do Fantasma para confrontar um mal antigo na província de Yutei.",
+        "link": "#",
+        "imagem": "/images/GoY.avif",
+        "imagemLogo": "/images/GoY-logo.webp",
+        "tags": ["GoY", "Ghost of Yutei", "Sucker Punch", "samurai", "Japão feudal", "Ação", "Aventura", "Mundo Aberto", "homem", "18", "2025"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-18.webp",
+            "motivos": ["Violência Extrema"]
+        }
+    },
+    {
+        "nome": "Marvel's Spider-Man - Remastered",
+        "descricao": "O jogo apresenta um Peter Parker mais experiente, que já é o Homem-Aranha há oito anos. Ele luta para equilibrar sua vida pessoal caótica com sua carreira de super-herói, enquanto uma nova ameaça, liderada pelo vilão Senhor Negativo, surge para tomar o controle do submundo de Nova York e ameaçar toda a cidade.",
+        "descricaoResumida": "Um Peter Parker experiente enfrenta o vilão Senhor Negativo para salvar Nova York.",
+        "link": "https://www.playstation.com/pt-br/games/marvels-spider-man-remastered/",
+        "imagem": "/images/Spider-Man.jpg",
+        "imagemLogo": "/images/Spider-Man-logo.png",
+        "tags": ["Spider-Man", "Spidey", "Peter Parker", "Senhor Negativo", "Insomniac", "homem", "aranha", "Ação", "Aventura", "Mundo Aberto", "homem", "remasterizado", "12", "2018"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-12.avif",
+            "motivos": ["Violência"]
+        }
+    },
+    {
+        "nome": "Marvel's Spider-Man 2",
+        "descricao": "Peter Parker e Miles Morales unem forças como dois Homens-Aranha para proteger Nova York de novas e poderosas ameaças. Eles enfrentam vilões icônicos como Kraven, o Caçador, e o simbionte Venom, que testa não apenas seus poderes, mas também seus relacionamentos e a vida pessoal de cada um.",
+        "descricaoResumida": "Peter Parker e Miles Morales unem forças para enfrentar Kraven e o simbionte Venom.",
+        "link": "https://www.playstation.com/pt-br/games/marvels-spider-man-2/",
+        "imagem": "/images/Spider-Man2.jpg",
+        "imagemLogo": "/images/Spider-Man2-logo.webp",
+        "tags": ["Spider-Man", "Spidey", "SM2", "Peter Parker", "Miles Morales", "Venom", "Kraven", "homem", "aranha", "Insomniac", "Ação", "Aventura", "Mundo Aberto", "homem", "16", "2023"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-16.avif",
+            "motivos": ["Violência", "Linguagem Imprópria"]
+        }
+    },
+    {
+        "nome": "Demon's Souls",
+        "descricao": "No reino de Boletaria, uma névoa incolor trouxe demônios que mergulharam o mundo na escuridão. Como um guerreiro solitário, você deve entrar na névoa para enfrentar os demônios e coletar suas almas, arriscando sua própria humanidade. Este é o precursor da série 'Souls', conhecido por sua dificuldade implacável.",
+        "descricaoResumida": "Um guerreiro solitário enfrenta demônios no reino sombrio de Boletaria para salvar o mundo.",
+        "link": "https://www.playstation.com/pt-br/games/demons-souls/",
+        "imagem": "/images/Demons-Souls.jpg",
+        "imagemLogo": "/images/Demons-Souls-logo.webp",
+        "tags": ["Souls", "DeS", "FromSoftware", "Bluepoint", "RPG", "difícil", "RPG de Ação", "protagonista_personalizavel", "16", "2020"],
+        "faixaEtaria": {
+            "imagemFaixa": "/images/FE-16.avif",
+            "motivos": ["Violência"]
+        }
+    }
+]

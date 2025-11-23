@@ -1,0 +1,179 @@
+.merch {
+    position: relative;
+    transform: translateX(-3vw);
+    display: flex;
+    height: 100%;
+    width: calc(100% + 6vw);
+    min-height: 500px;
+    margin-top: 3vw;
+
+    .merch-background {
+        position: absolute;
+        top: -1vw;
+        left: -2vw;
+        z-index: -1;
+        height: 100%;
+        transform: rotateZ(2deg);
+        filter: opacity(1) invert(1);
+    }
+
+    .info,
+    .images {
+        width: 60%;
+        padding: 3vw;
+    }
+
+    .info {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-right: -7.5vw;
+        padding-right: 10vw;
+        background: linear-gradient(110deg, transparent, #fff 60%);
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+        line-height: 1.5;
+
+        h1,
+        p {
+            color: var(--color-black-t-70);
+        }
+
+        a {
+            position: absolute;
+            top: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+            width: 15rem;
+            overflow: hidden;
+            color: #fff;
+            font-size: 1rem;
+            text-transform: uppercase;
+            background: #3784dc;
+            border: 1px solid black;
+            border-radius: 0.25rem;
+            transition: ease-in-out 0.3s;
+
+            &::after {
+                position: absolute;
+                right: -102%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                content: "Vamos Lá!";
+                width: 100%;
+                height: 100%;
+                color: var(--color-black);
+                background: var(--color-white);
+                transition: ease-in-out 0.3s;
+            }
+
+            &:hover::after {
+                right: 0;
+                transition-delay: 0.2s;
+                transition: ease-in-out 0.3s;
+            }
+        }
+    }
+
+    .images {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        background: linear-gradient(110deg, var(--color-playstation-dark-blue), var(--color-playstation-light-blue));
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            transform: translateY(-3vw);
+            filter: drop-shadow(2px 2px 0px var(--color-playstation-accent-blue));
+        }
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: calc(1.5rem + 2vw);
+        background: linear-gradient(150deg, var(--color-white), rgb(183, 241, 255));
+
+        .merch-background {
+            display: none;
+        }
+
+        .info {
+            gap: 1.5rem;
+            width: 100%;
+            margin-right: 0;
+            padding-right: 6vw;
+            align-items: center;
+            text-align: center;
+            background: none;
+            clip-path: none;
+
+            .merch-title {
+                font-size: 2rem;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 1rem;
+                width: 70%;
+            }
+
+            .merch-button {
+                position: relative;
+                height: 3rem;
+                width: 80%;
+                max-width: 250px;
+                margin-top: 6vw;
+                font-size: 1rem;
+            }
+        }
+
+        .images {
+            display: none;
+        }
+    }
+}
+
+.miscelaneous {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+
+    .deco-line.miscelaneous-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        height: 4rem;
+        width: 100%;
+        background: var(--color-playstation-accent-blue);
+    }
+
+    .deco-line.miscelaneous-2 {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        height: 4rem;
+        width: 110%;
+        background: var(--color-playstation-light-blue);
+        transform: translateX(-3%) rotate(-1.5deg);
+    }
+
+    .deco-line.miscelaneous-3 {
+        position: absolute;
+        bottom: -26px;
+        left: 0;
+        z-index: 1;
+        content: "";
+        height: 4rem;
+        width: 110%;
+        background: var(--color-playstation-dark-blue);
+        box-shadow: -5px 1rem 10px var(--color-black-t-70);
+    }
+}
