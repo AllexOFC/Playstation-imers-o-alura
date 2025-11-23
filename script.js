@@ -85,7 +85,7 @@ function renderizarCards(dadosParaRenderizar) {
 
         article.addEventListener('mouseenter', () => {
             if (dado.imagem) {
-                mainContent.style.setProperty('--bg-image', `url('${dado.imagem}')`);
+                mainContent.style.setProperty('--bg-image', `url('/${dado.imagem}')`);
             }
         });
     }
